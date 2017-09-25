@@ -3,13 +3,13 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  malcolm-portfolio.com:
+  Malcolm-portfolio.com:
     site_hosts:
-      - canonical: malcolm-portfolio.dev
+      - canonical: Malcolm-portfolio.dev
         redirects:
-          - www.malcolm-portfolio.dev
+          - www.Malcolm-portfolio.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@malcolm-portfolio.dev
+    admin_email: admin@Malcolm-portfolio.dev
     multisite:
       enabled: false
     ssl:
