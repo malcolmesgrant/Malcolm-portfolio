@@ -3,32 +3,16 @@
  * Template Name: Home Template
  */
 ?>
-<section class="hero-banner">
-    <?php while (have_posts()) : the_post(); ?>
-        <?php the_post_thumbnail(); ?>
-    <?php endwhile; ?>
-</section>
-<?php
-//instantiate WordPress Query Object for projects
-$arguments = array('post_type' => 'project');
-$projects_query = new WP_Query($arguments);
-?>
-
-
-<?php if ( $projects_query->have_posts() ): ?>
-    <?php while ( $projects_query->have_posts() ): ?>
-        <?php $projects_query->the_post(); ?>
-        <h1> <?php the_field('client'); ?> </h1> 
-        <h2><?php the_field('project_name'); ?></h2>
-        <img src="<?php the_field('thumbnail'); ?>" />
-        <?php if ( have_rows('tech_stack') ): ?>
-            <?php while( have_rows('tech_stack') ):?>
-            <?php the_row(); ?>
-                <p> <?php the_sub_field('languages'); ?> </p>
-            <?php endwhile; ?>
-        <?php endif; ?>
-    <?php endwhile; ?>
+<?php if (have_posts()): ?>
+<?php while (have_posts()) : the_post(); ?>
+    <section id="home"><?php (get_template_part("templates/components/banner-section"))?></section>
+    <section id="aboutme"><?php (get_template_part("templates/components/about-me"))?></section>
+    <section id="projects"><?php (get_template_part("templates/components/projects"))?></section>
+    <section id="contact"><?php (get_template_part("templates/components/contact"))?></section>
+<?php endwhile; ?>
 <?php endif; ?>
+ 
+
 
 
 
