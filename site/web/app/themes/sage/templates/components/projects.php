@@ -12,12 +12,12 @@ $projects_query = new WP_Query($arguments);
                 <div class="projects container">
                     <div class="overlay">
            
-                        <a href="" target='popup'><img class="pic" src="<?php the_field('proj_image_one'); ?>" /></a>
-                        <a href="" target='popup'><img class="pic" src="<?php the_field('proj_image_two'); ?>" /></a>
-                        <a href="" target='popup'><img class="pic" src="<?php the_field('proj_image_three'); ?>" /></a>
-                        <a href="" target='popup'><img class="pic" src="<?php the_field('proj_image_four'); ?>" /></a>
-                        <a href="" target='popup'><img class="pic" src="<?php the_field('proj_image_five'); ?>" /></a>
-                        <a href="" target='popup'><img class="pic" src="<?php the_field('proj_image_six'); ?>"/></a>
+                        <a href="https://github.com/malcolmesgrant/RockPaperScissorLizardSpock" target='popup'><img class="pic" src="<?php the_field('proj_image_one'); ?>" /></a>
+                        <a href="https://github.com/malcolmesgrant/Tetris" target='popup'><img class="pic" src="<?php the_field('proj_image_two'); ?>" /></a>
+                        <a href="https://github.com/malcolmesgrant/level-ground" target='popup'><img class="pic" src="<?php the_field('proj_image_three'); ?>" /></a>
+                        <a href="https://github.com/malcolmesgrant/RapperCarousel" target='popup'><img class="pic" src="<?php the_field('proj_image_four'); ?>" /></a>
+                        <a href="https://github.com/malcolmesgrant/flappyHomer" target='popup'><img class="pic" src="<?php the_field('proj_image_five'); ?>" /></a>
+                        <a href="https://github.com/malcolmesgrant/jwliWebsite" target='popup'><img class="pic" src="<?php the_field('proj_image_six'); ?>"/></a>
                     
                     </div>
                  </div>
